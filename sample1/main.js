@@ -2,6 +2,7 @@ const main = () => {
     let app = new PIXI.Application({
         width: 500,
         height: 500,
+        resolution: window.devicePixelRatio || 1,
         backgroundColor: 0xFFFFFF
     });
     document.body.appendChild(app.view);
